@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="200dp"
+        android:layout_height="34dp"
+        android:text="First Number"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="58dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="142dp"
+        android:layout_height="34dp"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Second Number"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="58dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="35dp"
+        android:layout_toRightOf="@+id/textView"
+        android:ems="10"
+        android:inputType="number" />
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="93dp"
+        android:layout_marginTop="92dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:layout_margin="250dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="onAddButton"/>
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/button"
+       android:layout_centerHorizontal="true"
+        android:text="result"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:id="@+id/textView3"/>
+</RelativeLayout>
